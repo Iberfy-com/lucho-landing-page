@@ -13517,3 +13517,14 @@ textarea.form-control {
         background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     }
 }
+
+.faq-section{
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+@media (min-width: 1024px){
+    .faq-section{
+        padding-top: 180px;
+        padding-bottom: 40px;
+    }
+}

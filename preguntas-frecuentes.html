@@ -1,0 +1,699 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Creato</title>
+        <link rel="stylesheet" href="./css/iconfont/tabler-icons.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!------------------------------>
+        <!-- Header Start -->
+        <!------------------------------>
+        <header class="main-header position-fixed w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl py-0">
+                    <div class="logo">
+                        <a class="navbar-brand py-0 me-0" href="#"
+                            ><img
+                                style="max-width: 100px"
+                                src="./assets/images/logo.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                    <a
+                        class="d-inline-block d-lg-block d-xl-none d-xxl-none nav-toggler text-decoration-none"
+                        data-bs-toggle="offcanvas"
+                        href="#offcanvasExample"
+                        aria-controls="offcanvasExample"
+                    >
+                        <i class="ti ti-menu-2"></i>
+                    </a>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section-services"
+                                    >Servicios</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Preguntas frecuentes
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <a
+                                class="btn btn-primary btn-hover-secondery text-capitalize"
+                                href="#section-contact"
+                                >Contactanos</a
+                            >
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+            >
+                <div class="offcanvas-header">
+                    <div class="logo">
+                        <a class="navbar-brand py-0 me-0" href="#"
+                            ><img
+                                style="max-width: 100px"
+                                src="./assets/images/logo.svg"
+                                alt=""
+                        /></a>
+                    </div>
+                    <button
+                        type="button"
+                        class="btn-close text-reset ms-auto"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    >
+                        <i class="ti ti-x"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body pt-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#"
+                                >Inicio</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-services"
+                                >Servicios</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                >Preguntas frecuentes
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="login d-block align-items-center">
+                        <a
+                            class="btn btn-primary text-capitalize w-100"
+                            href="#section-contact"
+                            >Contactanos</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!------------------------------>
+        <!-- Header End  -->
+        <!------------------------------>
+
+        <!-- FAQ Section Start -->
+        <!------------------------------>
+        <div id="section-faq"></div>
+        <section class="faq-section position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h5
+                                class="fs-7 section-subheading text-uppercase text-center fw-500"
+                            >
+                                FAQ
+                            </h5>
+                            <div
+                                class="fs-2 section-heading text-uppercase fw-bold text-center"
+                            >
+                                Preguntas Frecuentes
+                            </div>
+                            <p class="text-muted mt-3">
+                                Resolvemos las dudas más comunes sobre nuestros
+                                servicios
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="accordion" id="faqAccordion">
+                            <!-- FAQ Item 1 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header" id="faq1">
+                                    <button
+                                        class="accordion-button collapsed fw-semibold"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1"
+                                        aria-expanded="false"
+                                        aria-controls="collapse1"
+                                    >
+                                        ¿Qué servicios ofrece Creato?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse1"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="faq1"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        Ofrecemos servicios especializados de
+                                        asistencia virtual, prospección de
+                                        clientes, soporte administrativo y
+                                        ventas. Nos enfocamos en ayudar a
+                                        empresas y emprendedores a optimizar sus
+                                        procesos comerciales y administrativos
+                                        con personal altamente calificado.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header" id="faq2">
+                                    <button
+                                        class="accordion-button collapsed fw-semibold"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2"
+                                        aria-expanded="false"
+                                        aria-controls="collapse2"
+                                    >
+                                        ¿Cómo funcionan sus planes de media
+                                        jornada y jornada completa?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse2"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="faq2"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        <strong
+                                            >Media Jornada (4 horas):</strong
+                                        >
+                                        Ideal para tareas específicas y
+                                        proyectos puntuales. Perfecto para
+                                        pequeñas empresas que necesitan apoyo
+                                        parcial.<br /><br />
+                                        <strong
+                                            >Jornada Completa (8 horas):</strong
+                                        >
+                                        Para empresas que requieren dedicación
+                                        completa en sus procesos. Incluye mayor
+                                        seguimiento y resultados más amplios.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header" id="faq3">
+                                    <button
+                                        class="accordion-button collapsed fw-semibold"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3"
+                                        aria-expanded="false"
+                                        aria-controls="collapse3"
+                                    >
+                                        ¿Qué herramientas utilizan para la
+                                        prospección?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse3"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="faq3"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        Utilizamos herramientas líderes en la
+                                        industria como
+                                        <strong>GENESYS</strong> para llamadas,
+                                        <strong>EMAIL MARKETING</strong> para
+                                        campañas automatizadas,
+                                        <strong>LINKEDIN</strong> para
+                                        networking profesional, y
+                                        <strong>CRM</strong> para gestión
+                                        integral de clientes. Todas nuestras
+                                        estrategias están respaldadas por
+                                        tecnología de vanguardia.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 4 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header" id="faq4">
+                                    <button
+                                        class="accordion-button collapsed fw-semibold"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4"
+                                        aria-expanded="false"
+                                        aria-controls="collapse4"
+                                    >
+                                        ¿Cuánto tiempo toma ver resultados?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse4"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="faq4"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        Los primeros resultados suelen verse
+                                        entre <strong>2 a 4 semanas</strong>,
+                                        dependiendo del tipo de servicio y la
+                                        industria. Para prospección, los
+                                        primeros contactos calificados aparecen
+                                        en la primera semana, mientras que las
+                                        ventas pueden tomar entre 2-6 semanas
+                                        según el ciclo de su negocio.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 5 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header" id="faq5">
+                                    <button
+                                        class="accordion-button collapsed fw-semibold"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse5"
+                                        aria-expanded="false"
+                                        aria-controls="collapse5"
+                                    >
+                                        ¿Ofrecen servicios personalizados?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse5"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="faq5"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        ¡Absolutamente! Entendemos que cada
+                                        negocio es único. Ofrecemos consultas
+                                        gratuitas para entender sus necesidades
+                                        específicas y crear un plan
+                                        personalizado que se ajuste a sus
+                                        objetivos, presupuesto y industria.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 6 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header" id="faq6">
+                                    <button
+                                        class="accordion-button collapsed fw-semibold"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse6"
+                                        aria-expanded="false"
+                                        aria-controls="collapse6"
+                                    >
+                                        ¿Cómo garantizan la calidad del
+                                        servicio?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse6"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="faq6"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        Contamos con un equipo de profesionales
+                                        certificados y un sistema de control de
+                                        calidad riguroso. Proporcionamos
+                                        reportes regulares, seguimiento
+                                        personalizado y estamos disponibles para
+                                        ajustes en tiempo real. Su satisfacción
+                                        es nuestra prioridad.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 7 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header" id="faq7">
+                                    <button
+                                        class="accordion-button collapsed fw-semibold"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse7"
+                                        aria-expanded="false"
+                                        aria-controls="collapse7"
+                                    >
+                                        ¿Puedo cancelar o modificar mi plan en
+                                        cualquier momento?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse7"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="faq7"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        Sí, ofrecemos flexibilidad total. Puede
+                                        modificar su plan, pausar el servicio o
+                                        cancelar con un aviso previo de 15 días.
+                                        No hay penalidades por cambios y nuestro
+                                        equipo lo acompañará en todo el proceso
+                                        para asegurar una transición suave.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 8 -->
+                            <div class="accordion-item border-0 mb-3">
+                                <h2 class="accordion-header" id="faq8">
+                                    <button
+                                        class="accordion-button collapsed fw-semibold"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapse8"
+                                        aria-expanded="false"
+                                        aria-controls="collapse8"
+                                    >
+                                        ¿Trabajan con empresas de cualquier
+                                        tamaño?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapse8"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="faq8"
+                                    data-bs-parent="#faqAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        Sí, trabajamos desde emprendedores
+                                        individuales hasta grandes
+                                        corporaciones. Nuestros planes son
+                                        escalables y se adaptan al crecimiento
+                                        de su negocio. Tenemos experiencia en
+                                        múltiples industrias y sectores.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section within FAQ -->
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-8 text-center">
+                        <div class="bg-light rounded-3 p-4">
+                            <h4 class="fw-bold mb-3">
+                                ¿No encontraste la respuesta que buscabas?
+                            </h4>
+                            <p class="text-muted mb-4">
+                                Nuestro equipo está listo para resolver todas
+                                tus dudas personalmente
+                            </p>
+                            <a
+                                href="#section-contact"
+                                class="btn btn-primary btn-hover-secondery text-capitalize"
+                            >
+                                Contactanos Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section End -->
+
+        <style>
+            /* FAQ Custom Styles */
+            .faq-section {
+                background-color: #f8f9fa;
+            }
+
+            .accordion-item {
+                border-radius: 10px !important;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                background: white;
+            }
+
+            .accordion-button {
+                border-radius: 10px !important;
+                background-color: white;
+                color: #333;
+                padding: 1.5rem;
+                font-size: 1.1rem;
+                border: none;
+            }
+
+            .accordion-button:not(.collapsed) {
+                background-color: #007bff;
+                color: white;
+                box-shadow: none;
+            }
+
+            .accordion-button:focus {
+                box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+                border: none;
+            }
+
+            .accordion-button::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            .accordion-button:not(.collapsed)::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            }
+
+            .accordion-body {
+                padding: 1.5rem;
+                font-size: 1rem;
+                line-height: 1.6;
+                color: #666;
+            }
+
+            .section-subheading {
+                color: #007bff;
+                letter-spacing: 2px;
+            }
+
+            .section-heading {
+                color: #333;
+                margin-bottom: 1rem;
+            }
+
+            /* Animation for accordion */
+            .accordion-collapse {
+                transition: all 0.3s ease;
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .accordion-button {
+                    padding: 1rem;
+                    font-size: 1rem;
+                }
+
+                .accordion-body {
+                    padding: 1rem;
+                }
+            }
+        </style>
+
+        <!------------------------------>
+        <!---- Contact Section Start --->
+        <!------------------------------>
+        <div id="section-contact"></div>
+        <section class="contact position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
+                        <h5
+                            class="fs-7 section-subheading text-uppercase fw-500"
+                        >
+                            Contactanos ahora
+                        </h5>
+                        <div
+                            class="fs-2 section-heading text-uppercase fw-bold"
+                        >
+                            ¿Tienes algún problema? <br />
+                            Estamos aquí para ayudarte.
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
+                        <form>
+                            <div class="row">
+                                <div
+                                    class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+                                >
+                                    <div class="form-group">
+                                        <label
+                                            class="form-label text-uppercase fs-6 mb-3"
+                                            >Nombre completo</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="contact-name"
+                                            class="form-control border-0"
+                                            placeholder="Ingresa tu nombre"
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+                                >
+                                    <div class="form-group">
+                                        <label
+                                            class="form-label text-uppercase mb-3"
+                                            >Correo electrónico</label
+                                        >
+                                        <input
+                                            type="email"
+                                            class="form-control border-0"
+                                            placeholder="Ingresa tu correo electrónico"
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+                                >
+                                    <div class="form-group">
+                                        <label
+                                            class="form-label text-uppercase fs-6 mb-3"
+                                            >Teléfono</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control border-0"
+                                            placeholder="Ingresa tu número de teléfono"
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
+                                >
+                                    <div class="form-group">
+                                        <label
+                                            class="form-label text-uppercase mb-3"
+                                            >Asunto</label
+                                        >
+                                        <select
+                                            id="contact-subject"
+                                            class="form-control border-0"
+                                        >
+                                            <option>General</option>
+                                            <option value="atencion">
+                                                Atención al cliente
+                                            </option>
+                                            <option value="prospeccion">
+                                                Prospección de Clientes
+                                            </option>
+                                            <option value="administrativo">
+                                                Asistente Administrativo
+                                            </option>
+                                            <option value="ventas">
+                                                Ventas
+                                            </option>
+                                            <option value="vendedor">
+                                                Vendedor Telefónico
+                                            </option>
+                                            <option value="gestion">
+                                                Gestión de retención y
+                                                fidelización de clientes
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-12 col-xl-12 col-12">
+                                    <div
+                                        class="mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3 mb-3"
+                                    >
+                                        <label
+                                            class="form-label text-uppercase mb-3"
+                                            >Mensaje</label
+                                        >
+                                        <textarea
+                                            class="form-control border-0"
+                                            placeholder="Ingrese su mensaje"
+                                        ></textarea>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"
+                                >
+                                    <!-- <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>-->
+                                </div>
+                                <div
+                                    class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex justify-content-end"
+                                >
+                                    <button
+                                        class="btn btn-primary btn-hover-secondery text-capitalize mt-2 w-100"
+                                    >
+                                        enviar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------>
+        <!-- Contact Section End  -->
+        <!------------------------------>
+
+        <!------------------------------>
+        <!-- Footer Section Start  -->
+        <!------------------------------>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-xxl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-12 m-auto"
+                    >
+                        <div class="footer-logo-col">
+                            <p class="copyrights fs-8 mb-0 text-center">
+                                <a href="#"
+                                    ><img src="./assets/images/logo.svg"
+                                /></a>
+                                &copy; Copyright todos los derechos reservados
+                                <span id="autodate"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!------------------------------>
+        <!-- Footer Section End  -->
+        <!------------------------------>
+
+        <!------------------------------>
+        <!----------- Js Libs ---------->
+        <!------------------------------>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/custom.js"></script>
+    </body>
+</html>
