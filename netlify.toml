@@ -1,0 +1,37 @@
+[build]
+  # Directorio donde están los archivos para publicar
+  publish = "."
+
+  # No necesitamos comando de build para sitio estático
+  command = ""
+
+# Configuración de headers para optimizar rendimiento
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache para archivos estáticos
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Redirects para SPA (manejo de rutas cliente)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
