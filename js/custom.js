@@ -19,12 +19,12 @@ $(document).ready(function () {
     $("#offcanvasExample").offcanvas("hide");
   });
 
-  $(".btn-service").on("click", function (e) {
-    e.preventDefault();
-    const service = $(this).data("service");
-    const modal = $(`#${service}-modal`);
-    modal.addClass("show");
-  });
+  // $(".btn-service").on("click", function (e) {
+  //   e.preventDefault();
+  //   const service = $(this).data("service");
+  //   const modal = $(`#${service}-modal`);
+  //   modal.addClass("show");
+  // });
 
   $(".modal-close").on("click", function (e) {
     e.preventDefault();
