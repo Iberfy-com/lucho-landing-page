@@ -620,6 +620,198 @@
                 line-height: 1.3;
             }
         }
+
+        .container-nros {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            border-radius: 24px;
+            box-shadow:
+                0 25px 50px rgba(33, 150, 243, 0.1),
+                0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(33, 150, 243, 0.1);
+        }
+
+        .container-nros::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2196f3, #21cbf3, #2196f3);
+            background-size: 200% 100%;
+            animation: goldGradient 3s ease-in-out infinite;
+        }
+
+        @keyframes goldGradient {
+            0%,
+            100% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 0%;
+            }
+        }
+
+        .container-nros h2 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-shadow: 0 1px 2px rgba(33, 150, 243, 0.1);
+            position: relative;
+        }
+
+        .container-nros h2::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #2196f3, #21cbf3);
+            border-radius: 2px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin: 4rem 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            border: 1px solid rgba(33, 150, 243, 0.15);
+            box-shadow:
+                0 8px 25px rgba(33, 150, 243, 0.08),
+                0 3px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(33, 150, 243, 0.2),
+                transparent
+            );
+            transition: left 0.6s ease;
+        }
+
+        .stat-card:hover::before {
+            left: 100%;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow:
+                0 25px 50px rgba(33, 150, 243, 0.3),
+                0 15px 35px rgba(0, 0, 0, 0.4);
+            border-color: rgba(33, 150, 243, 0.4);
+        }
+
+        .stat-number {
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            font-weight: 900;
+            color: #2196f3;
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+            background: linear-gradient(135deg, #2196f3, #21cbf3, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .stat-label {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            font-weight: 600;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            line-height: 1.4;
+        }
+
+        .stats-note {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            background: rgba(33, 150, 243, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(33, 150, 243, 0.2);
+        }
+
+        .stats-note p {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin: 0;
+            font-style: italic;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container-nros {
+                margin: 3rem 1rem;
+                padding: 3rem 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                margin: 3rem 0;
+            }
+
+            .stat-card {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .stat-card:hover {
+                transform: translateY(-5px) scale(1.02);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-nros {
+                padding: 2rem 1rem;
+            }
+
+            .stat-card {
+                padding: 2rem 1rem;
+            }
+
+            .stats-note {
+                padding: 1rem;
+            }
+        }
     </style>
 
     <body>
@@ -630,7 +822,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-xl py-0">
                     <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="#"
+                        <a class="navbar-brand py-0 me-0" href="/"
                             ><img src="/assets/images/logo.svg" alt=""
                         /></a>
                     </div>
@@ -648,7 +840,7 @@
                     >
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"
+                                <a class="nav-link" aria-current="page" href="/"
                                     >Inicio</a
                                 >
                             </li>
@@ -682,7 +874,7 @@
             >
                 <div class="offcanvas-header">
                     <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="#"
+                        <a class="navbar-brand py-0 me-0" href="/"
                             ><img
                                 style="max-width: 100px"
                                 src="/assets/images/logo.svg"
@@ -701,7 +893,7 @@
                 <div class="offcanvas-body pt-0">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#"
+                            <a class="nav-link" aria-current="page" href="/"
                                 >Inicio</a
                             >
                         </li>
@@ -735,20 +927,50 @@
             <div class="container-hero-head">
                 <video muted autoplay loop class="desktop">
                     <source
-                        src="/assets/videos/servicios/cliente-full.webm"
+                        src="/assets/videos/servicios/prospeccion-full.webm"
                         type="video/webm"
                     />
                     Tu navegador no soporta el tag de video.
                 </video>
                 <video muted autoplay loop class="mobile">
                     <source
-                        src="/assets/videos/servicios/cliente-full-mobile.webm"
+                        src="/assets/videos/servicios/prospeccion-full-mobile.webm"
                         type="video/webm"
                     />
                     Tu navegador no soporta el tag de video.
                 </video>
-                <h1>Atención al Cliente</h1>
+                <h1>Prospección B2B</h1>
                 <h3>Servicio profesional desde $750/mes</h3>
+            </div>
+        </div>
+
+        <div class="container-nros">
+            <h2>Mi prospección en números</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">+170</div>
+                    <div class="stat-label">
+                        Leads generados<br />en el último año
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">14.33%</div>
+                    <div class="stat-label">Tasa de<br />conversión</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">63%</div>
+                    <div class="stat-label">Tasa de<br />respuesta</div>
+                </div>
+            </div>
+
+            <div class="stats-note">
+                <p>
+                    Datos medidos entre abril 2023 y abril 2024 en base a
+                    bitácora personal
+                </p>
             </div>
         </div>
 
@@ -756,23 +978,15 @@
             <h2>STACK TECNOLÓGICO</h2>
             <div>
                 <img
-                    src="/assets/images/logos/stack-tecnologico/genesys.png"
+                    src="/assets/images/logos/stack-tecnologico/zoho.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/avaya.png"
+                    src="/assets/images/logos/stack-tecnologico/apollo.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/citrix.png"
-                    alt="Tech Stack Image"
-                />
-                <img
-                    src="/assets/images/logos/stack-tecnologico/vtex.png"
-                    alt="Tech Stack Image"
-                />
-                <img
-                    src="/assets/images/logos/stack-tecnologico/Freshworks.png"
+                    src="/assets/images/logos/stack-tecnologico/ringover.png"
                     alt="Tech Stack Image"
                 />
                 <img
@@ -780,7 +994,15 @@
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/logo-oracle-siebel.png"
+                    src="/assets/images/logos/stack-tecnologico/crunchbase.png"
+                    alt="Tech Stack Image"
+                />
+                <img
+                    src="/assets/images/logos/stack-tecnologico/iplan.png"
+                    alt="Tech Stack Image"
+                />
+                <img
+                    src="/assets/images/logos/stack-tecnologico/rocket.png"
                     alt="Tech Stack Image"
                 />
             </div>
@@ -795,39 +1017,41 @@
             <div class="price-cards">
                 <div class="price-card">
                     <h5>Media Jornada</h5>
-                    <div class="price">€550</div>
+                    <div class="price">€750</div>
                     <div class="price-period">por mes</div>
                     <ul class="price-features">
                         <li>20 horas semanales</li>
-                        <li>Atención personalizada</li>
-                        <li>Soporte técnico incluido</li>
+                        <li>50-80 leads cualificados/mes</li>
+                        <li>Investigación de mercado incluida</li>
+                        <li>Seguimiento de prospectos</li>
+                        <li>Reportes semanales</li>
                         <li>Sin recargos por contratación</li>
-                        <li>Sin penalización por cancelación</li>
                         <li>Precio final transparente</li>
                     </ul>
                     <div class="price-note">
-                        Perfecto para empresas pequeñas que buscan soporte
-                        profesional
+                        Ideal para empresas que necesitan un flujo constante de
+                        leads cualificados
                     </div>
                 </div>
 
                 <div class="price-card featured">
                     <h5>Jornada Completa</h5>
-                    <div class="price">€1,049</div>
+                    <div class="price">€1,400</div>
                     <div class="price-period">por mes</div>
                     <ul class="price-features">
                         <li>40 horas semanales</li>
-                        <li>Atención prioritaria</li>
-                        <li>Soporte técnico avanzado</li>
-                        <li>Gestor de cuenta dedicado</li>
+                        <li>120+ leads cualificados/mes</li>
+                        <li>Análisis competitivo completo</li>
+                        <li>Llamadas de descubrimiento</li>
+                        <li>CRM setup y gestión</li>
+                        <li>Reportes detallados bi-semanales</li>
+                        <li>Account manager dedicado</li>
                         <li>Sin recargos por contratación</li>
-                        <li>Sin penalización por cancelación</li>
                         <li>Precio final transparente</li>
-                        <li>Reportes mensuales detallados</li>
                     </ul>
                     <div class="price-note">
-                        La solución completa para empresas que necesitan máxima
-                        disponibilidad
+                        La solución completa para empresas que buscan escalar
+                        agresivamente sus ventas
                     </div>
                 </div>
             </div>
@@ -1047,7 +1271,7 @@
                     >
                         <div class="footer-logo-col">
                             <p class="copyrights fs-8 mb-0 text-center">
-                                <a href="#"
+                                <a href="/"
                                     ><img src="/assets/images/logo.svg"
                                 /></a>
                                 &copy; Copyright todos los derechos reservados
@@ -1070,7 +1294,8 @@
         <script src="/js/custom.js"></script>
         <script>
             window.addEventListener("load", function () {
-                document.getElementById("contact-subject").value = "atencion";
+                document.getElementById("contact-subject").value =
+                    "prospeccion";
             });
         </script>
     </body>
