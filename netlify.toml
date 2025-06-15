@@ -46,6 +46,11 @@ from = "/servicio/prospeccion"
 to = "/servicio-prospeccion.html"
 status = 200
 
+[[redirects]]
+from = "/servicio/asistencia-administrativa"
+to = "/servicio-asistencia.html"
+status = 200
+
 
 # Redirects para SPA (manejo de rutas cliente)
 [[redirects]]
