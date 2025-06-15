@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Creato</title>
-        <link rel="stylesheet" href="/css/iconfont/tabler-icons.css" />
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="./css/iconfont/tabler-icons.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
 
     <style>
@@ -17,19 +17,23 @@
             justify-content: flex-start;
             position: relative;
             aspect-ratio: 16/9;
-            min-height: 80vh;
+            max-height: 70vh;
+            height: 100%;
+            width: 100%;
             overflow: hidden;
             padding: 2rem;
             padding-top: 130px;
-            max-width: 100%;
 
             @media (min-width: 768px) {
                 padding-top: 200px;
             }
         }
+
         .container-hero-head video {
+            filter: blur(5px);
             max-width: 100%;
             max-height: 100%;
+            overflow: hidden;
             position: absolute;
             top: 0;
             left: 0;
@@ -37,9 +41,21 @@
             height: 100%;
             object-fit: cover;
             opacity: 0.8;
+            z-index: 1;
+        }
+
+        .container-hero-head-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 2;
         }
 
         .container-hero-head h1 {
+            z-index: 5;
             position: relative;
             z-index: 2;
             color: white;
@@ -58,7 +74,7 @@
         }
         .container-hero-head h3 {
             position: relative;
-            z-index: 2;
+            z-index: 5;
             color: #fff;
             font-size: 20px;
             text-shadow: 0px 8px 5px #00000020;
@@ -631,7 +647,7 @@
                 <nav class="navbar navbar-expand-xl py-0">
                     <div class="logo">
                         <a class="navbar-brand py-0 me-0" href="#"
-                            ><img src="/assets/images/logo.svg" alt=""
+                            ><img src="./assets/images/logo.svg" alt=""
                         /></a>
                     </div>
                     <a
@@ -653,12 +669,14 @@
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/#section-services"
+                                <a class="nav-link" href="./#section-services"
                                     >Servicios</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/preguntas-frecuentes"
+                                <a
+                                    class="nav-link"
+                                    href="./preguntas-frecuentes"
                                     >Preguntas frecuentes
                                 </a>
                             </li>
@@ -685,7 +703,7 @@
                         <a class="navbar-brand py-0 me-0" href="#"
                             ><img
                                 style="max-width: 100px"
-                                src="/assets/images/logo.svg"
+                                src="./assets/images/logo.svg"
                                 alt=""
                         /></a>
                     </div>
@@ -706,12 +724,12 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#section-services"
+                            <a class="nav-link" href="./#section-services"
                                 >Servicios</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/preguntas-frecuentes"
+                            <a class="nav-link" href="./preguntas-frecuentes"
                                 >Preguntas frecuentes
                             </a>
                         </li>
@@ -733,16 +751,17 @@
         <div id="section-hero"></div>
         <div class="container-hero">
             <div class="container-hero-head">
+                <div class="container-hero-head-mask"></div>
                 <video muted autoplay loop class="desktop">
                     <source
-                        src="/assets/videos/servicios/cliente-full.webm"
+                        src="./assets/videos/servicios/cliente-full.webm"
                         type="video/webm"
                     />
                     Tu navegador no soporta el tag de video.
                 </video>
                 <video muted autoplay loop class="mobile">
                     <source
-                        src="/assets/videos/servicios/cliente-full-mobile.webm"
+                        src="./assets/videos/servicios/cliente-full-mobile.webm"
                         type="video/webm"
                     />
                     Tu navegador no soporta el tag de video.
@@ -756,31 +775,31 @@
             <h2>STACK TECNOLÓGICO</h2>
             <div>
                 <img
-                    src="/assets/images/logos/stack-tecnologico/genesys.png"
+                    src="./assets/images/logos/stack-tecnologico/genesys.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/avaya.png"
+                    src="./assets/images/logos/stack-tecnologico/avaya.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/citrix.png"
+                    src="./assets/images/logos/stack-tecnologico/citrix.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/vtex.png"
+                    src="./assets/images/logos/stack-tecnologico/vtex.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/Freshworks.png"
+                    src="./assets/images/logos/stack-tecnologico/Freshworks.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/salesforce.png"
+                    src="./assets/images/logos/stack-tecnologico/salesforce.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/logo-oracle-siebel.png"
+                    src="./assets/images/logos/stack-tecnologico/logo-oracle-siebel.png"
                     alt="Tech Stack Image"
                 />
             </div>
@@ -842,30 +861,33 @@
             <div class="payment-methods">
                 <div class="payment-method">
                     <img
-                        src="/assets/images/medios-pago/western-union.png"
+                        src="./assets/images/medios-pago/western-union.png"
                         alt="Western Union"
                     />
                 </div>
                 <div class="payment-method">
                     <img
-                        src="/assets/images/medios-pago/swift.png"
+                        src="./assets/images/medios-pago/swift.png"
                         alt="SWIFT"
                     />
                 </div>
                 <div class="payment-method">
                     <img
-                        src="/assets/images/medios-pago/binance.png"
+                        src="./assets/images/medios-pago/binance.png"
                         alt="Binance"
                     />
                 </div>
                 <div class="payment-method">
                     <img
-                        src="/assets/images/medios-pago/coinbase.png"
+                        src="./assets/images/medios-pago/coinbase.png"
                         alt="Coinbase"
                     />
                 </div>
                 <div class="payment-method">
-                    <img src="/assets/images/medios-pago/deel.png" alt="Deel" />
+                    <img
+                        src="./assets/images/medios-pago/deel.png"
+                        alt="Deel"
+                    />
                 </div>
             </div>
 
@@ -1048,7 +1070,7 @@
                         <div class="footer-logo-col">
                             <p class="copyrights fs-8 mb-0 text-center">
                                 <a href="#"
-                                    ><img src="/assets/images/logo.svg"
+                                    ><img src="./assets/images/logo.svg"
                                 /></a>
                                 &copy; Copyright todos los derechos reservados
                                 <span id="autodate"></span>
@@ -1065,9 +1087,9 @@
         <!------------------------------>
         <!----------- Js Libs ---------->
         <!------------------------------>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/custom.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/custom.js"></script>
         <script>
             window.addEventListener("load", function () {
                 document.getElementById("contact-subject").value = "atencion";
