@@ -17,19 +17,23 @@
             justify-content: flex-start;
             position: relative;
             aspect-ratio: 16/9;
-            min-height: 80vh;
+            max-height: 70vh;
+            height: 100%;
+            width: 100%;
             overflow: hidden;
             padding: 2rem;
             padding-top: 130px;
-            max-width: 100%;
 
             @media (min-width: 768px) {
                 padding-top: 200px;
             }
         }
+
         .container-hero-head video {
+            filter: blur(5px);
             max-width: 100%;
             max-height: 100%;
+            overflow: hidden;
             position: absolute;
             top: 0;
             left: 0;
@@ -37,9 +41,21 @@
             height: 100%;
             object-fit: cover;
             opacity: 0.8;
+            z-index: 1;
+        }
+
+        .container-hero-head-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: 2;
         }
 
         .container-hero-head h1 {
+            z-index: 5;
             position: relative;
             z-index: 2;
             color: white;
@@ -48,31 +64,23 @@
             text-align: center;
             margin-bottom: 1.5rem;
             line-height: 1.1;
-            letter-spacing: 0.1em;
+            letter-spacing: 4.5px;
+            text-shadow: 0px 8px 5px #00000020;
             max-width: 90%;
-            text-shadow:
-                4px 4px 8px rgba(0, 0, 0, 0.9),
-                2px 2px 4px rgba(0, 0, 0, 0.8),
-                0 0 30px rgba(0, 0, 0, 0.7),
-                0 0 60px rgba(0, 0, 0, 0.5);
 
             @media (min-width: 768px) {
-                font-size: 56px;
+                font-size: 72px;
             }
         }
         .container-hero-head h3 {
             position: relative;
-            z-index: 2;
-            color: white;
-            font-size: 24px;
+            z-index: 5;
+            color: #fff;
+            font-size: 20px;
+            text-shadow: 0px 8px 5px #00000020;
             font-weight: 600;
             text-align: center;
             margin-bottom: 2rem;
-            text-shadow:
-                3px 3px 6px rgba(0, 0, 0, 0.9),
-                1px 1px 3px rgba(0, 0, 0, 0.8),
-                0 0 20px rgba(0, 0, 0, 0.6),
-                0 0 40px rgba(0, 0, 0, 0.4);
 
             @media (min-width: 768px) {
                 font-size: 28px;
@@ -820,6 +828,144 @@
                 padding: 1rem;
             }
         }
+
+        /* Estilos para container-how */
+        .container-how {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .container-how h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .container-how h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #2196f3, #21cbf3);
+            border-radius: 2px;
+        }
+
+        .container-how > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container-how > div > div {
+            flex: 1;
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container-how > div > div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: #3b82f6;
+        }
+
+        .container-how img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin: 0 auto 1.5rem auto;
+            display: block;
+        }
+
+        .container-how h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .container-how p {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .container-how .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 3rem;
+            font-weight: 400;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .container-how {
+                padding: 2rem 1rem;
+            }
+
+            .container-how h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .container-how > div {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .container-how > div > div {
+                padding: 1.5rem;
+            }
+
+            .container-how img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .container-how h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-how h2 {
+                font-size: 1.8rem;
+            }
+
+            .container-how > div > div {
+                padding: 1.25rem;
+            }
+
+            .container-how h3 {
+                font-size: 1rem;
+            }
+
+            .container-how p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 
     <body>
@@ -933,38 +1079,114 @@
         <div id="section-hero"></div>
         <div class="container-hero">
             <div class="container-hero-head">
+                <div class="container-hero-head-mask"></div>
                 <video muted autoplay loop class="desktop">
                     <source
-                        src="/assets/videos/servicios/administrativo-full.webm"
+                        src="/assets/videos/servicios/prospeccion-full.webm"
                         type="video/webm"
                     />
                     Tu navegador no soporta el tag de video.
                 </video>
                 <video muted autoplay loop class="mobile">
                     <source
-                        src="/assets/videos/servicios/administrativo-full.webm"
+                        src="/assets/videos/servicios/prospeccion-full-mobile.webm"
                         type="video/webm"
                     />
                     Tu navegador no soporta el tag de video.
                 </video>
-                <h1>Asistencia administrativa</h1>
-                <h3>Servicio profesional desde $750/mes</h3>
+                <h1>
+                    Bases de datos <br />
+                    a medida <br />
+                    de tu empresa
+                </h1>
+                <h3>Servicio profesional desde (euros)250/mes</h3>
             </div>
         </div>
+
+        <div class="container-how">
+            <h2>Bases de datos premium para tu prospección</h2>
+            <p class="subtitle" id="AI_Objetivo">
+                Datos verificados y segmentados para maximizar tus conversiones
+            </p>
+            <div>
+                <div>
+                    <img
+                        src="/assets/images/comodin.png"
+                        alt="imagen comodín"
+                    />
+                    <h3>1 lote = 1000 prospectos</h3>
+                    <p>
+                        1000 prospectos = 1000 correos electrónicos verificados.
+                    </p>
+                </div>
+                <div>
+                    <img
+                        src="/assets/images/comodin.png"
+                        alt="imagen comodín"
+                    />
+                    <h3>Base de datos segmentadas</h3>
+                    <p>
+                        Por región, industria, toma de decisión, tamaño de
+                        empresa, actividad en linkedin.
+                    </p>
+                </div>
+                <div>
+                    <img
+                        src="/assets/images/comodin.png"
+                        alt="imagen comodín"
+                    />
+                    <h3>100% Legal</h3>
+                    <p>
+                        Legal y cumple con los reglamentos europeo de protección
+                        de datos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container-nros">
+            <h2>Mi prospección en números</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">+170</div>
+                    <div class="stat-label">
+                        Leads generados<br />en el último año
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">14.33%</div>
+                    <div class="stat-label">Tasa de<br />conversión</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">63%</div>
+                    <div class="stat-label">Tasa de<br />respuesta</div>
+                </div>
+            </div>
+
+            <div class="stats-note">
+                <p>
+                    Datos medidos entre abril 2023 y abril 2024 en base a
+                    bitácora personal
+                </p>
+            </div>
+        </div> -->
 
         <div class="container-tech">
             <h2>STACK TECNOLÓGICO</h2>
             <div>
                 <img
-                    src="/assets/images/logos/stack-tecnologico/exel.png"
+                    src="/assets/images/logos/stack-tecnologico/zoho.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/Jira.png"
+                    src="/assets/images/logos/stack-tecnologico/apollo.png"
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/notion.png"
+                    src="/assets/images/logos/stack-tecnologico/ringover.png"
                     alt="Tech Stack Image"
                 />
                 <img
@@ -972,62 +1194,24 @@
                     alt="Tech Stack Image"
                 />
                 <img
-                    src="/assets/images/logos/stack-tecnologico/clickup.png"
+                    src="/assets/images/logos/stack-tecnologico/crunchbase.png"
+                    alt="Tech Stack Image"
+                />
+                <img
+                    src="/assets/images/logos/stack-tecnologico/iplan.png"
+                    alt="Tech Stack Image"
+                />
+                <img
+                    src="/assets/images/logos/stack-tecnologico/rocket.png"
                     alt="Tech Stack Image"
                 />
             </div>
         </div>
 
-        <div class="container-price">
-            <h4>La pieza que le falta a tu empresa desde</h4>
-            <p class="price-subtitle">
-                Planes flexibles para empresas de todos los tamaños
-            </p>
-
-            <div class="price-cards">
-                <div class="price-card">
-                    <h5>Media Jornada</h5>
-                    <div class="price">€500</div>
-                    <div class="price-period">por mes</div>
-                    <ul class="price-features">
-                        <li>20 horas semanales</li>
-                        <li>Gestión de correos electrónicos</li>
-                        <li>Organización de calendarios</li>
-                        <li>Procesamiento de documentos</li>
-                        <li>Seguimiento de tareas</li>
-                        <li>Reportes semanales</li>
-                        <li>Sin recargos por contratación</li>
-                        <li>Precio final transparente</li>
-                    </ul>
-                    <div class="price-note">
-                        Perfecto para empresas que necesitan apoyo
-                        administrativo básico
-                    </div>
-                </div>
-
-                <div class="price-card featured">
-                    <h5>Jornada Completa</h5>
-                    <div class="price">€949</div>
-                    <div class="price-period">por mes</div>
-                    <ul class="price-features">
-                        <li>40 horas semanales</li>
-                        <li>Gestión completa de oficina virtual</li>
-                        <li>Coordinación de proyectos</li>
-                        <li>Manejo de bases de datos</li>
-                        <li>Preparación de presentaciones</li>
-                        <li>Gestión de redes sociales básica</li>
-                        <li>Asistente personal dedicado</li>
-                        <li>Reportes detallados bi-semanales</li>
-                        <li>Sin recargos por contratación</li>
-                        <li>Precio final transparente</li>
-                    </ul>
-                    <div class="price-note">
-                        La solución completa para empresas que necesitan soporte
-                        administrativo integral
-                    </div>
+        <!--  </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="container-pay">
             <h4>Medios de pago</h4>

@@ -42,13 +42,13 @@ to = "/servicio-atencion.html"
 status = 200
 
 [[redirects]]
-from = "/servicio/prospeccion"
-to = "/servicio-prospeccion.html"
+from = "/servicio/bd-b2b"
+to = "/servicio-b2b.html"
 status = 200
 
 [[redirects]]
-from = "/servicio/asistencia-administrativa"
-to = "/servicio-asistencia.html"
+from = "/servicio/prospeccion-telefonica"
+to = "/servicio-prospeccion-telefonica.html"
 status = 200
 
 
