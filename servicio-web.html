@@ -108,6 +108,123 @@
             }
         }
 
+        .container-video-section {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            border-radius: 24px;
+            box-shadow:
+                0 25px 50px rgba(59, 130, 246, 0.1),
+                0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container-video-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2196f3, #21cbf3, #2196f3);
+            background-size: 300% 100%;
+            animation: videoGradient 3s ease-in-out infinite;
+        }
+
+        @keyframes videoGradient {
+            0%,
+            100% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 0%;
+            }
+        }
+
+        .container-video-section h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            position: relative;
+            line-height: 1.2;
+        }
+
+        .container-video-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #2196f3, #21cbf3);
+            border-radius: 2px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow:
+                0 20px 40px rgba(0, 0, 0, 0.2),
+                0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .video-wrapper:hover {
+            transform: translateY(-5px);
+            box-shadow:
+                0 30px 60px rgba(0, 0, 0, 0.25),
+                0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            height: 450px;
+            display: block;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .container-video-section {
+                margin: 3rem 1rem;
+                padding: 3rem 1.5rem;
+            }
+
+            .container-video-section h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .video-wrapper iframe {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-video-section {
+                padding: 2rem 1rem;
+            }
+
+            .container-video-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .video-wrapper iframe {
+                height: 200px;
+            }
+        }
+
         .container-tech {
             max-width: 1200px;
             margin: 6rem auto;
@@ -777,8 +894,10 @@
             <div class="container">
                 <nav class="navbar navbar-expand-xl py-0">
                     <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="#"
-                            ><img src="/assets/images/logo.svg" alt=""
+                        <a class="navbar-brand py-0 me-0" href="/"
+                            ><img
+                                src="/assets/images/logo.svg"
+                                alt="Logo Iberfy"
                         /></a>
                     </div>
                     <a
@@ -829,11 +948,11 @@
             >
                 <div class="offcanvas-header">
                     <div class="logo">
-                        <a class="navbar-brand py-0 me-0" href="#"
+                        <a class="navbar-brand py-0 me-0" href="/"
                             ><img
                                 style="max-width: 100px"
                                 src="/assets/images/logo.svg"
-                                alt=""
+                                alt="Logo Iberfy"
                         /></a>
                     </div>
                     <button
@@ -848,7 +967,7 @@
                 <div class="offcanvas-body pt-0">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#"
+                            <a class="nav-link" aria-current="page" href="/"
                                 >Inicio</a
                             >
                         </li>
@@ -939,6 +1058,21 @@
                         seguridad (LGPD-GDPR)
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <div class="container-video-section">
+            <h2>Cómo Funciona</h2>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/cBO1PL3zurk?si=uS8FD9b3qw1kB68c"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                >
+                </iframe>
             </div>
         </div>
 
