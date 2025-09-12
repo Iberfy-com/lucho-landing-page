@@ -1427,7 +1427,7 @@
                         </div>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
-                        <form>
+                        <form id="form-contacto">
                             <div class="row">
                                 <div
                                     class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
@@ -1455,6 +1455,7 @@
                                         >
                                         <input
                                             type="email"
+                                            id="contact-email"
                                             class="form-control border-0"
                                             placeholder="Ingresa tu correo electrónico"
                                         />
@@ -1470,6 +1471,7 @@
                                         >
                                         <input
                                             type="text"
+                                            id="contact-phone"
                                             class="form-control border-0"
                                             placeholder="Ingresa tu número de teléfono"
                                         />
@@ -1487,25 +1489,28 @@
                                             id="contact-subject"
                                             class="form-control border-0"
                                         >
-                                            <option>General</option>
-                                            <option value="atencion">
+                                            <option value="general">
+                                                General
+                                            </option>
+                                            <option value="atencion-al-cliente">
                                                 Atención al cliente
                                             </option>
-                                            <option value="prospeccion">
-                                                Prospección de Clientes
+                                            <option value="b2b">
+                                                Base de datos b2b
                                             </option>
-                                            <option value="administrativo">
-                                                Asistente Administrativo
+                                            <option
+                                                value="prospeccion-telefonica"
+                                            >
+                                                Prospección telefónica
                                             </option>
-                                            <option value="ventas">
-                                                Ventas
+                                            <option value="email-marketing">
+                                                Email Marketing
                                             </option>
-                                            <option value="vendedor">
-                                                Vendedor Telefónico
+                                            <option value="linkedin">
+                                                Automatización linkedin
                                             </option>
-                                            <option value="gestion">
-                                                Gestión de retención y
-                                                fidelización de clientes
+                                            <option value="web">
+                                                Sitio web
                                             </option>
                                         </select>
                                     </div>
@@ -1519,6 +1524,7 @@
                                             >Mensaje</label
                                         >
                                         <textarea
+                                            id="contact-message"
                                             class="form-control border-0"
                                             placeholder="Ingrese su mensaje"
                                         ></textarea>
@@ -1533,6 +1539,7 @@
                                     class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 d-flex justify-content-end"
                                 >
                                     <button
+                                        id="btn-form-contacto"
                                         class="btn btn-primary btn-hover-secondery text-capitalize mt-2 w-100"
                                     >
                                         enviar
@@ -1787,10 +1794,10 @@
         <script src="/js/jquery.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/custom.js"></script>
+        <script src="./js/main.js"></script>
         <script>
             window.addEventListener("load", function () {
-                document.getElementById("contact-subject").value =
-                    "prospeccion";
+                document.getElementById("contact-subject").value = "b2b";
             });
         </script>
     </body>
