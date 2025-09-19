@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
         <meta
             name="description"
             content="Iberfy - Automatización empresarial, equipos de atención al cliente, prospección B2B y desarrollo web. Soluciones tecnológicas para hacer crecer tu negocio desde €99/mes."
@@ -1551,5 +1552,14 @@
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/custom.js"></script>
         <script src="./js/main.js"></script>
+        <script>
+            window.$zoho = window.$zoho || {};
+            $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
+        </script>
+        <script
+            id="zsiqscript"
+            src="https://salesiq.zohopublic.com/widget?wc=siq883b66d1f98a6933e9727938d4c4feb1ed40971768f60fb18941dafbdcfcf752"
+            defer
+        ></script>
     </body>
 </html>

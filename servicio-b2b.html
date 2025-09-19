@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
         <meta
             name="description"
             content="Bases de datos B2B verificadas con Iberfy. 1000 prospectos segmentados por industria desde €250/mes. Cumplimos GDPR y LGPD para prospección efectiva."
@@ -1831,5 +1832,14 @@
                 document.getElementById("contact-subject").value = "b2b";
             });
         </script>
+        <script>
+            window.$zoho = window.$zoho || {};
+            $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
+        </script>
+        <script
+            id="zsiqscript"
+            src="https://salesiq.zohopublic.com/widget?wc=siq883b66d1f98a6933e9727938d4c4feb1ed40971768f60fb18941dafbdcfcf752"
+            defer
+        ></script>
     </body>
 </html>
