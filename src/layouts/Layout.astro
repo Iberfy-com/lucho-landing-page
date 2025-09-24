@@ -1,22 +1,65 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    canonical: string;
+}
+
+import Header from "../components/shared/Header.astro";
+import Footer from "../components/shared/Footer.astro";
+
+const { title, description, canonical } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="description" content={description} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="/assets/images/logo.svg" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <link rel="canonical" href={canonical} />
+        <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg" />
+        <link rel="stylesheet" href="/css/iconfont/tabler-icons.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+
+        <title>{title}</title>
+    </head>
+    <body>
+        <Header />
+        <slot />
+        <Footer />
+        <script src="/js/jquery.min.js" is:inline></script>
+        <script src="/js/bootstrap.min.js" is:inline></script>
+        <script src="/js/custom.js" is:inline></script>
+        <script src="/js/main.js" is:inline></script>
+        <!-- <script>
+            window.$zoho = window.$zoho || {};
+            $zoho.salesiq = $zoho.salesiq || { ready: function () {} };
+        </script>
+        <script
+            id="zsiqscript"
+            src="https://salesiq.zohopublic.com/widget?wc=siq883b66d1f98a6933e9727938d4c4feb1ed40971768f60fb18941dafbdcfcf752"
+            defer></script> -->
+    </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>

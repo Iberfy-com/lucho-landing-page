@@ -1,0 +1,158 @@
+---
+interface Props {
+    title: string;
+    cards: {
+        img: {
+            src: string;
+            alt: string;
+        };
+        title: string;
+        items: string[];
+    }[];
+}
+const { title, cards } = Astro.props;
+---
+
+<div class="container-how">
+    <h2>{title}</h2>
+    <div>
+        {
+            cards.map((card) => (
+                <div>
+                    <img src={card.img.src} alt={card.img.alt} />
+                    <h3>{card.title}</h3>
+                    {card.items.map((item) => (
+                        <p>{item}</p>
+                    ))}
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<style>
+    .container-how {
+        padding: 4rem 2rem;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+
+    .container-how h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1e293b;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .container-how h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #2196f3, #21cbf3);
+        border-radius: 2px;
+    }
+
+    .container-how > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container-how > div > div {
+        flex: 1;
+        background: white;
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid #e2e8f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container-how > div > div:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        border-color: #3b82f6;
+    }
+
+    .container-how img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin: 0 auto 1.5rem auto;
+        display: block;
+    }
+
+    .container-how h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+
+    .container-how p {
+        font-size: 0.95rem;
+        color: #64748b;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .container-how {
+            padding: 2rem 1rem;
+        }
+
+        .container-how h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .container-how > div {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .container-how > div > div {
+            padding: 1.5rem;
+        }
+
+        .container-how img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .container-how h3 {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container-how h2 {
+            font-size: 1.8rem;
+        }
+
+        .container-how > div > div {
+            padding: 1.25rem;
+        }
+
+        .container-how h3 {
+            font-size: 1rem;
+        }
+
+        .container-how p {
+            font-size: 0.9rem;
+        }
+    }
+</style>

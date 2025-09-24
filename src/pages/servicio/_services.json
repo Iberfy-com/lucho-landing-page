@@ -1,0 +1,446 @@
+[
+  {
+    "slug": "atencion-al-cliente",
+    "title": "Monta un equipo de atención al cliente",
+    "subtitle": "Servicio profesional desde euros 1699/mes",
+    "hero-video-url": "/assets/videos/servicios/cliente-full.webm",
+    "hero-video-url-mobile": "/assets/videos/servicios/cliente-full-mobile.webm",
+    "metas": {
+      "canonical": "/servicio/atencion-al-cliente",
+      "title": "Iberfy | Equipo de Atención al Cliente - Servicio Profesional",
+      "description": "Servicio de atención al cliente con Iberfy. 2 agentes 25h/sem, 12.000 minutos, PBX + 2 números desde €1699/mes. Equipo profesional multicanal."
+    },
+    "info": {
+      "active": true,
+      "title": "Un equipo a tú medida",
+      "cards": [
+        {
+          "img": {
+            "src": "/assets/images/servicio-atencion/help.png",
+            "alt": "Imagen telefonía ayuda ilustración"
+          },
+          "title": "12.000 minutos de llamada entrantes",
+          "items": ["Puedes incrementar minutos extra desde €0,039/min"]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-atencion/hablando.png",
+            "alt": "Imagen telefonía ayuda ilustración"
+          },
+          "title": "2 Agentes semanales 25hrs semanales",
+          "items": ["Puedes incrementar agentes de 25hs/sem desde €600"]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-atencion/arrow.png",
+            "alt": "Imagen telefonía ayuda ilustración"
+          },
+          "title": "PBX + 2 NÚMEROS TELEFÓNICOS",
+          "items": [
+            "Puedes portar tu número o disfrutar de hasta 2 números incluidos con tu plan."
+          ]
+        }
+      ]
+    },
+    "how-to-work": {
+      "active": true,
+      "iframe": {
+        "src": "https://www.youtube.com/embed/T8-8LiWwZL8?si=ryl5QFU66KcaIFZR",
+        "title": "Explicación del servicio de atención al cliente"
+      }
+    },
+    "stack": {
+      "active": true,
+      "items": [
+        {
+          "src": "/assets/images/logos/stack-tecnologico/genesys.png",
+          "alt": "Logo Genesys"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/avaya.png",
+          "alt": "Logo Avaya"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/citrix.png",
+          "alt": "Logo Citrix"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/vtex.png",
+          "alt": "Logo Vtex"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/Freshworks.png",
+          "alt": "Logo Freshworks"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/salesforce.png",
+          "alt": "Logo Salesforce"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/logo-oracle-siebel.png",
+          "alt": "Logo Siebel"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "bd-b2b",
+    "title": "Bases de datos a medida de tu empresa",
+    "subtitle": "Servicio profesional desde (euros)250/mes",
+    "hero-video-url": "/assets/videos/servicios/prospeccion-full.webm",
+    "hero-video-url-mobile": "/assets/videos/servicios/prospeccion-full-mobile.webm",
+    "metas": {
+      "canonical": "/servicio/bd-d2b",
+      "title": "Iberfy | Bases de Datos B2B Verificadas - Prospección Efectiva",
+      "description": "Bases de datos B2B premium verificadas y segmentadas. 1000 prospectos por lote, cumplimiento GDPR/LGPD y entrega garantizada para tu prospección."
+    },
+    "info": {
+      "active": true,
+      "title": "Bases de datos premium para tu prospección",
+      "subtitle": "Datos verificados y segmentados para maximizar tus conversiones",
+      "cards": [
+        {
+          "img": {
+            "src": "/assets/images/servicio-b2b/check.png",
+            "alt": "Imagen lista check"
+          },
+          "title": "1 lote = 1000 prospectos",
+          "items": ["1000 prospectos=1000 correos electronicos verificados"]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-b2b/estadisticas.png",
+            "alt": "imagen estadisticas ilustración"
+          },
+          "title": "Bases de datos Segmentadas",
+          "items": [
+            "Por región",
+            "Por industrias",
+            "Por tomadores de decisión",
+            "Por tamaño de empresa",
+            "Por actividad en Linkedin"
+          ]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-b2b/escudo.png",
+            "alt": "Imagen escudo ilustración"
+          },
+          "title": "BBDD SEGURAS Y VERIFICADAS",
+          "items": [
+            "Que cumplen con los estándares y políticas de Protección de Datos (GDPR - LGPD)"
+          ]
+        }
+      ]
+    },
+    "how-to-work": {
+      "active": true,
+      "iframe": {
+        "src": "https://www.youtube.com/embed/iUbiIhibt8g?si=vKJT8zIzKPkjWtQJ",
+        "title": "Explicación del servicio de base de datos b2b"
+      }
+    },
+    "stack": {
+      "active": true,
+      "items": [
+        {
+          "src": "/assets/images/logos/stack-tecnologico/zoho.png",
+          "alt": "Logo Zoho"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/apollo.png",
+          "alt": "Logo Apollo"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/ringover.png",
+          "alt": "Logo Ringover"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/salesforce.png",
+          "alt": "Logo Salesforce"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/crunchbase.png",
+          "alt": "Logo Crunchbase"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/iplan.png",
+          "alt": "Logo iPlan"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/rocket.png",
+          "alt": "Logo Rocket"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "prospeccion-telefonica",
+    "title": "Tu equipo de prospección telefónica",
+    "subtitle": "Servicio profesional desde (euros)1899/mes",
+    "hero-video-url": "/assets/videos/servicios/prospeccion-full.webm",
+    "hero-video-url-mobile": "/assets/videos/servicios/prospeccion-full-mobile.webm",
+    "metas": {
+      "canonical": "/servicio/prospeccion-telefonica",
+      "title": "Prospección telefónica: Más ventas y clientes | Iberfy",
+      "description": "Aumenta las oportunidades de venta sin aumentar tu equipo. Creamos listas de contactos, calificamos leads y cerramos reuniones por ti. Ahorra tiempo y recursos."
+    },
+    "info": {
+      "active": true,
+      "title": "Un equipo a tu medida",
+      "subtitle": "Bases de alta calidad y adaptadas a tus campañas",
+      "cards": [
+        {
+          "img": {
+            "src": "/assets/images/servicio-atencion/help.png",
+            "alt": "Imagen ayuda ilustración"
+          },
+          "title": "12.000 Minutos de llamadas salientes*",
+          "items": [
+            "Puedes incrementar minutos extra desde €0,0546/min",
+            "*Grabación + almacenamiento por 1 mes +(€60/mes)"
+          ]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-atencion/hablando.png",
+            "alt": "Imagen persona hablando ilustración"
+          },
+          "title": "2 Agentes semanales 25hrs semanales",
+          "items": [
+            "Por región, industrias, tomadores de decisión, tamaño de empresa, actividad en Linkedin"
+          ]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-atencion/arrow.png",
+            "alt": "Imagen PBX + 2 números telefónicos ilustración"
+          },
+          "title": "PBX + 2 números telefónicos",
+          "items": [
+            "Puedes portar tu número o disfrutar de hasta 2 números de llamadas salientes nuevos"
+          ]
+        }
+      ]
+    },
+    "how-to-work": {
+      "active": true,
+      "iframe": {
+        "src": "https://www.youtube.com/embed/1LeuR--AYtE?si=VqVqOgLHLB5LF9se",
+        "title": "Explicación del servicio de prospección telefónica"
+      }
+    },
+    "stack": {
+      "active": true,
+      "items": [
+        {
+          "src": "/assets/images/logos/stack-tecnologico/zoho.png",
+          "alt": "Logo Zoho"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/apollo.png",
+          "alt": "Logo Apollo"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/ringover.png",
+          "alt": "Logo Ringover"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/salesforce.png",
+          "alt": "Logo Salesforce"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/crunchbase.png",
+          "alt": "Logo Crunchbase"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/iplan.png",
+          "alt": "Logo iPlan"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/rocket.png",
+          "alt": "Logo Rocket"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "linkedin",
+    "title": "Genera leads de manera eficiente",
+    "subtitle": "Servicio profesional desde (euros)149/mes",
+    "hero-video-url": "/assets/videos/servicios/administrativo-full.webm",
+    "hero-video-url-mobile": "/assets/videos/servicios/administrativo.webm",
+    "metas": {
+      "canonical": "/servicio/linkedin",
+      "title": "Automatización de LinkedIn con Waalaxy | Iberfy",
+      "description": "Automatización LinkedIn con Iberfy. 800 contactos nuevos/mes, 50% más respuesta desde €149/mes. Campañas múltiples simultáneas con Waalaxy."
+    },
+    "info": {
+      "active": true,
+      "title": "Una red a tu medida",
+      "subtitle": "",
+      "cards": [
+        {
+          "img": {
+            "src": "/assets/images/servicio-linkedin/search.png",
+            "alt": "Imagen de búsqueda ilustración"
+          },
+          "title": "Incrementa tu tasa de respuesta hasta 50%",
+          "items": [
+            "Identifica tomadores de decisión, clientes potenciales y empresas según industria, cargo, ubicación, tamaño, etc.",
+            "Automatiza secuencias de mensajes sin intervención manual."
+          ]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-linkedin/hablando.png",
+            "alt": "Imagen persona hablando ilustración"
+          },
+          "title": "Hasta 800 nuevos contactos/mes",
+          "items": [
+            "Envía solicitudes de conexión y mensajes de forma programada y personalizada.",
+            "Identifica tomadores de decisión, clientes potenciales y empresas según industria, cargo, ubicación, tamaño, etc."
+          ]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-linkedin/mensajes.png",
+            "alt": "Imagen notificaciones ilustración"
+          },
+          "title": "Campañas múltiples de manera simultánea",
+          "items": [
+            "Permite hacer seguimiento automático a quienes no responden.",
+            "Puedes enviar y eliminar solicitudes de conexión de forma masiva."
+          ]
+        }
+      ]
+    },
+    "how-to-work": {
+      "active": true,
+      "iframe": {
+        "src": "https://www.youtube.com/embed/fz5Cu_09Le4?si=Wlp8ESR0YUSKdo3I",
+        "title": "Explicación del servicio de linkedin"
+      }
+    },
+    "stack": {
+      "active": true,
+      "items": [
+        {
+          "src": "/assets/images/logos/stack-tecnologico/genesys.png",
+          "alt": "Logo Genesys"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/avaya.png",
+          "alt": "Logo Avaya"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/citrix.png",
+          "alt": "Logo Citrix"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/vtex.png",
+          "alt": "Logo VTEX"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/Freshworks.png",
+          "alt": "Logo Freshworks"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/salesforce.png",
+          "alt": "Logo Salesforce"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/logo-oracle-siebel.png",
+          "alt": "Logo Oracle Siebel"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "web",
+    "title": "Monta tu primer sitio web",
+    "subtitle": "Servicio profesional desde (euros)1899/mes",
+    "hero-video-url": "/assets/videos/servicios/web.webm",
+    "hero-video-url-mobile": "/assets/videos/servicios/web.webm",
+    "metas": {
+      "canonical": "/servicio/web",
+      "title": "Creación de Páginas Web Profesionales que Venden | Iberfy",
+      "description": "Iberfy crea páginas web optimizadas para SEO, que atraen clientes y automatizan tu negocio. Impulsa tus ventas con un sitio web profesional y diseñado para convertir."
+    },
+    "info": {
+      "active": true,
+      "title": "Una web a tu medida",
+      "subtitle": "",
+      "cards": [
+        {
+          "img": {
+            "src": "/assets/images/servicio-web/calendar.png",
+            "alt": "Imagen de calendario ilustración"
+          },
+          "title": "Entrega prioritaria",
+          "items": ["Entregas desde 48hs hábiles*"]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-web/check.png",
+            "alt": "Imagen tablero check ilustración"
+          },
+          "title": "Iteramos juntos",
+          "items": [
+            "Te acompañamos de 1 a 3 rondas de cambios incluidos para pulir tu web antes de la entrega final."
+          ]
+        },
+        {
+          "img": {
+            "src": "/assets/images/servicio-web/escudo.png",
+            "alt": "Imagen escudo ilustración"
+          },
+          "title": "Seguridad garantizada",
+          "items": [
+            "Tu web cumpliendo con los estándares más altos de seguridad (LGPD-GDPR)"
+          ]
+        }
+      ]
+    },
+    "how-to-work": {
+      "active": true,
+      "iframe": {
+        "src": "https://www.youtube.com/embed/cBO1PL3zurk?si=uS8FD9b3qw1kB68c",
+        "title": "Explicación del servicio de sitio web"
+      }
+    },
+    "stack": {
+      "active": true,
+      "items": [
+        {
+          "src": "/assets/images/logos/stack-tecnologico/genesys.png",
+          "alt": "Logo Genesys"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/avaya.png",
+          "alt": "Logo Avaya"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/citrix.png",
+          "alt": "Logo Citrix"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/vtex.png",
+          "alt": "Logo VTEX"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/Freshworks.png",
+          "alt": "Logo Freshworks"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/salesforce.png",
+          "alt": "Logo Salesforce"
+        },
+        {
+          "src": "/assets/images/logos/stack-tecnologico/logo-oracle-siebel.png",
+          "alt": "Logo Oracle Siebel"
+        }
+      ]
+    }
+  }
+]

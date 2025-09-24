@@ -1,0 +1,60 @@
+---
+import servicios from "./_services.json";
+export async function getStaticPaths() {
+    return servicios.map((servicio) => {
+        return {
+            // 2. Define el valor de la URL
+            params: { servicio: servicio.slug },
+            // 3. Pasa los datos a la plantilla
+            props: { servicio },
+        };
+    });
+}
+
+import Layout from "../../layouts/Layout.astro";
+import Hero from "./_components/Hero.astro";
+import SectionCards from "./_components/SectionCards.astro";
+import SectionVideo from "./_components/SectionVideo.astro";
+import TechStack from "./_components/TechStack.astro";
+import Payments from "./_components/Payments.astro";
+import Disclaimer from "./_components/Disclaimer.astro";
+import FormContact from "../../components/shared/FormContact.astro";
+import FrecuentlyQuestions from "../../components/shared/FrecuentlyQuestions.astro";
+const { servicio } = Astro.props;
+---
+
+<Layout
+    canonical={servicio.metas.canonical}
+    title={servicio.metas.title}
+    description={servicio.metas.description}
+>
+    <Hero
+        title={servicio.title}
+        subtitle={servicio.subtitle}
+        heroVideoUrl={servicio["hero-video-url"]}
+        heroVideoUrlMobile={servicio["hero-video-url-mobile"]}
+    />
+
+    <SectionCards title={servicio.info.title} cards={servicio.info.cards} />
+
+    <SectionVideo
+        urlVideo={servicio["how-to-work"].iframe.src}
+        titleVideo={servicio["how-to-work"].iframe.title}
+    />
+
+    <TechStack items={servicio.stack.items} />
+
+    <Payments />
+
+    <FormContact />
+
+    <FrecuentlyQuestions />
+
+    <Disclaimer />
+</Layout>
+
+<script is:inline define:vars={{ servicioSlug: servicio.slug }}>
+    window.addEventListener("load", function () {
+        document.getElementById("contact-subject").value = servicioSlug;
+    });
+</script>

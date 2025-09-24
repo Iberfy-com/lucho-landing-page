@@ -1,11 +1,13 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Home from "../components/Home/Home.astro";
+import Layout from "../layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const canonicalUrl = "https://www.iberfy.com";
+const title = "Iberfy | Automatización Empresarial y Servicios Digitales";
+const description =
+    "Iberfy - Expertos en automatización empresarial, atención al cliente, prospección B2B y desarrollo web. Tu negocio online funcionando 24/7.";
 ---
 
-<Layout>
-	<Welcome />
+<Layout canonical={canonicalUrl} title={title} description={description}>
+    <Home />
 </Layout>

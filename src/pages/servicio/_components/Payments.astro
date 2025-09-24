@@ -1,0 +1,281 @@
+<div class="container-pay">
+    <h4>Medios de pago</h4>
+    <p class="pay-subtitle">Múltiples opciones seguras para tu comodidad</p>
+
+    <div class="payment-methods">
+        <div class="payment-method">
+            <img
+                src="/assets/images/medios-pago/western-union.png"
+                alt="Western Union"
+            />
+        </div>
+        <div class="payment-method">
+            <img src="/assets/images/medios-pago/swift.png" alt="SWIFT" />
+        </div>
+        <div class="payment-method">
+            <img src="/assets/images/medios-pago/binance.png" alt="Binance" />
+        </div>
+        <div class="payment-method">
+            <img src="/assets/images/medios-pago/coinbase.png" alt="Coinbase" />
+        </div>
+        <div class="payment-method">
+            <img src="/assets/images/medios-pago/deel.png" alt="Deel" />
+        </div>
+    </div>
+
+    <div class="payment-security">
+        <h5>Pagos 100% Seguros</h5>
+        <p>
+            Todas las transacciones están protegidas con los más altos
+            estándares de seguridad. Acepta pagos tradicionales, criptomonedas y
+            plataformas modernas de pago internacional.
+        </p>
+    </div>
+
+    <div class="legal-disclaimer">
+        <p>
+            <strong>Aclaraciones importantes:</strong> NO se acepta bajo ninguna
+            circunstancia la prestación de servicios en entidades fraudulentas, que
+            promuevan estafas o cualquier otra actividad ilícita. NO se aceptan propuestas
+            laborales que involucren a criptocasinos, sitios de apuesta o actividades
+            que carezcan de transparencia y tengan como fin perjudicar a usuarios,
+            civiles o a cualquier nación. NO se aceptan posiciones donde la tarifa
+            fija de 20 o 40hs semanales sea exclusivamente en base a "comisiones"
+            o "bonos de productividad".
+        </p>
+    </div>
+</div>
+
+<style>
+    .container-pay {
+        max-width: 1200px;
+        margin: 6rem auto;
+        padding: 4rem 2rem;
+        background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+        border-radius: 24px;
+        box-shadow:
+            0 20px 40px rgba(59, 130, 246, 0.08),
+            0 10px 25px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container-pay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #10b981, #34d399, #10b981);
+        background-size: 200% 100%;
+        animation: paymentGradient 3s ease-in-out infinite;
+    }
+
+    @keyframes paymentGradient {
+        0%,
+        100% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 0%;
+        }
+    }
+
+    .container-pay h4 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        position: relative;
+    }
+
+    .container-pay h4::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #10b981, #34d399);
+        border-radius: 2px;
+    }
+
+    .container-pay .pay-subtitle {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        color: #64748b;
+        margin-bottom: 3rem;
+        font-weight: 400;
+    }
+
+    .payment-methods {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 2rem;
+        align-items: center;
+        justify-items: center;
+        margin-top: 2rem;
+    }
+
+    .payment-method {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 16px;
+        padding: 2rem 1.5rem;
+        box-shadow:
+            0 8px 25px rgba(16, 185, 129, 0.08),
+            0 3px 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(16, 185, 129, 0.1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .payment-method::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(16, 185, 129, 0.1),
+            transparent
+        );
+        transition: left 0.5s ease;
+    }
+
+    .payment-method:hover::before {
+        left: 100%;
+    }
+
+    .payment-method:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow:
+            0 15px 35px rgba(16, 185, 129, 0.15),
+            0 8px 20px rgba(0, 0, 0, 0.1);
+        border-color: rgba(16, 185, 129, 0.2);
+    }
+
+    .payment-method img {
+        max-width: 120px;
+        max-height: 60px;
+        object-fit: contain;
+        filter: grayscale(20%) opacity(0.9);
+        transition: filter 0.3s ease;
+    }
+
+    .payment-method:hover img {
+        filter: grayscale(0%) opacity(1);
+    }
+
+    .payment-security {
+        margin-top: 3rem;
+        padding: 2rem;
+        background: rgba(16, 185, 129, 0.05);
+        border-radius: 16px;
+        border: 1px solid rgba(16, 185, 129, 0.1);
+    }
+
+    .payment-security h5 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .payment-security h5::before {
+        content: "🔒";
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .payment-security p {
+        font-size: 1rem;
+        color: #475569;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .container-pay {
+            margin: 3rem 1rem;
+            padding: 3rem 1.5rem;
+        }
+
+        .payment-methods {
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .payment-method {
+            padding: 1.5rem 1rem;
+        }
+
+        .payment-method img {
+            max-width: 100px;
+            max-height: 50px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .payment-methods {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .payment-method {
+            padding: 1rem 0.8rem;
+        }
+
+        .payment-method img {
+            max-width: 80px;
+            max-height: 40px;
+        }
+    }
+
+    .legal-disclaimer {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background: rgba(245, 245, 245, 0.8);
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 4px solid #ef4444;
+    }
+
+    .legal-disclaimer p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+        color: #6b7280;
+        margin: 0;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .legal-disclaimer strong {
+        color: #ef4444;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+        .legal-disclaimer {
+            margin-top: 1.5rem;
+            padding: 1rem;
+        }
+
+        .legal-disclaimer p {
+            font-size: 0.7rem;
+            line-height: 1.3;
+        }
+    }
+</style>
