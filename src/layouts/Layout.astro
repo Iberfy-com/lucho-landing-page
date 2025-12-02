@@ -7,6 +7,7 @@ interface Props {
 
 import Header from "../components/shared/Header.astro";
 import Footer from "../components/shared/Footer.astro";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 
 const { title, description, canonical } = Astro.props;
 ---
@@ -33,6 +34,8 @@ const { title, description, canonical } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg" />
         <link rel="stylesheet" href="/css/iconfont/tabler-icons.css" />
         <link rel="stylesheet" href="/css/style.css" />
+
+        <GoogleAnalytics />
 
         <title>{title}</title>
     </head>
